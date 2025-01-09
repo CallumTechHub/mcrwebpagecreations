@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCR Web Page Creations</title>
+    <link rel="stylesheet" href="home.css">
+<meta name="google-site-verification" content="Sg2es6IZqbTX511mHU8UV06Bds2_4BOOKCRSjLYPhJw" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+
+
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="./MCR (4).png">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <header class="header">
+                <a href="./index.html" class="logo">MCR Web Page <span>Creations</span></a>
+               
+
+            </ul>
+        </nav>
+    </header>
+    </header>
+</body>
+</div>
+
+
+
+
+
+
+    <section id="home" class="hero">
+        <h1>MCR Web Page Creations</h1>
+        <p>Hi my name is Callum, a Web and User Experience Design university student who is pursuing a career as a front-end-developer.</p>
+        <a href="./contact.html" class="btn">Contact Me</a>
+    </section>
+<section id="about" class="about">
+
+        <section class="services">
+            <div class="container">
+                <h2>What do we offer?</h2>
+                
+                <br>
+                <div class="serviceItems">
+                    <div class="serviceElement">
+                        <h1>Website Development</h1>
+                        <p>Creating responsive, user-friendly websites with modern technologies like HTML5, CSS3, and JavaScript.</p>
+                    </div>
+                    <br>
+                    <div class="serviceElement">
+                        <h1>UI/UX Design</h1>
+                        <p>Designing intuitive and engaging user interfaces that ensure an excellent user experience.</p>
+                    </div>
+                    <br>
+                    <div class="serviceElement">
+                        <h1>Web Hosting</h1>
+                        <p>Publishing the websites and allowing them to be visible to a wide audience over the internet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="services">
+        <div class="container">
+        <h2>About Me</h2>
+        <h3>Based in Manchester, UK</h3>
+        <p>My name is Callum who is based in Manchester and currently attends university studying a degree in Web and UX Design. I am passionate in creating websites whilst being able to bring your website to life. I enjoy problem-solving and bringing ideas to life through code and whilst achieving all distinctions in my IT college course that included website design and development I am certain that I can produce wonderful websites to meet the needs of everyone who chooses my services.</p>
+        <img src="MCR (4).png">
+        </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2>Projects</h2>
+        <div class="slideshowContainer">
+            <div class="slide active">
+              <img src="./Screenshot 2025-01-04 181610.png" alt="Slide 1">
+            </div>
+            <div class="slide">
+              <img src="Screenshot 2025-01-04 192532.png" alt="Slide 2">
+            </div>
+            <div class="slide">
+              <img src="Screenshot 2025-01-04 192913.png" alt="Slide 3">
+            </div>
+        
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        
+            <div class="dotsContainer">
+              <span class="dot active" onclick="setSlide(0)"></span>
+              <span class="dot" onclick="setSlide(1)"></span>
+              <span class="dot" onclick="setSlide(2)"></span>
+            </div>
+        </div>
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/share/1DiCJ4mji5/?mibextid=wwXIfr" class="facebook" target="_blank" title="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://tiktok.com/@mcr.webpagecreations" class="tiktok" target="_blank" title="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                  </a>
+                <a href="https://instagram.com/mcr.webpagecreations" class="instagram" target="_blank" title="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+
+      
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <script>
+            let currentSlide = 0;
+        
+            function showSlide(index) {
+              const slides = document.querySelectorAll('.slide');
+              const dots = document.querySelectorAll('.dot');
+        
+              if (index >= slides.length) currentSlide = 0;
+              if (index < 0) currentSlide = slides.length - 1;
+        
+              slides.forEach((slide, i) => {
+                slide.style.opacity = "0";
+                slide.classList.remove("active");
+                dots[i].classList.remove("active");
+              });
+        
+              slides[currentSlide].style.opacity = "1";
+              slides[currentSlide].classList.add("active");
+              dots[currentSlide].classList.add("active");
+            }
+        
+            function changeSlide(direction) {
+              currentSlide += direction;
+              showSlide(currentSlide);
+            }
+        
+            function setSlide(index) {
+              currentSlide = index;
+              showSlide(currentSlide);
+            }
+        
+            // Auto-slide functionality
+            setInterval(() => {
+              changeSlide(1);
+            }, 5000); // Change every 5 seconds
+          </script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+          
+
+        
+
+ 
+
+
+<script src="contact.js"></script>
+</body>
+</html>
+
+
+
+    
+
+  
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    </section>
+    </section>
+
+      </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
